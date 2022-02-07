@@ -1,0 +1,46 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+% Choose bibliography style for formatting list of publications
+\usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
+\bibliography{papers}
+
+% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
+\def\theme{RoyalBlue}
+
+% More predefined colors can be found in 
+% https://en.wikibooks.org/wiki/LaTeX/Colors
+% Example photograph taken from Wikimedia Commons
+% https://commons.wikimedia.org/wiki/File:Kiara_Krit_passport.jpg
+
+\usepackage{simplecv}
+
+\boldname{Surname}{Name}{N.}
+
+\begin{document}
+
+% Heading
+\headinginline{Polly-Anne Jeffrey}{
+    Website: \website{pollyjeffrey.github.io} \\ 
+    Email: \email{polly-anne10@hotmail.co.uk} \\
+    LinkedIn: \linkedin{Polly-Anne-Jeffrey} \\
+    GitHub: \github{PollyJeffrey} \\
+    ORCID: \orcid{0000-0001-6476-0402} \\
+}
+
+% Page One
+\import{sections/}{experience.tex}
+\import{sections/}{education.tex}
+\vspace{0.3cm}
+\sidebyside
+     {\import{sections/}{skills.tex}}
+     {\import{sections/}{skills2.tex}} 
+
+%\import{sections/}{publications.tex}
+
+%\import{sections/}{teaching.tex}
+%\import{sections/}{projects.tex}
+%\import{sections/}{awards.tex}
+%\import{sections/}{extracurricular.tex}
+
+\end{document}
